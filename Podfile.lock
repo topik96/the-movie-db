@@ -1,16 +1,32 @@
 PODS:
   - Alamofire (5.2.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+  - UIScrollView-InfiniteScroll (1.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - NVActivityIndicatorView
+  - SDWebImage (~> 5.0)
+  - UIScrollView-InfiniteScroll
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - NVActivityIndicatorView
+    - SDWebImage
+    - UIScrollView-InfiniteScroll
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
 
-PODFILE CHECKSUM: 313ab21b14d5bd4e69a97e96a41779d1e7c7bead
+PODFILE CHECKSUM: 263717a6a1253c29a3f64bbb92e0af66eea247b1
 
 COCOAPODS: 1.8.4

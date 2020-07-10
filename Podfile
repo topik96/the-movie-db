@@ -7,5 +7,8 @@ target 'TheMovieDB' do
 
   # Pods for TheMovieDB
   pod 'Alamofire', '~> 5.2'
+  pod 'NVActivityIndicatorView'
+  pod 'UIScrollView-InfiniteScroll'
+  pod 'SDWebImage', '~> 5.0'
   
 end
