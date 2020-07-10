@@ -45,7 +45,7 @@ class DetailMovieRawResponse: Decodable {
         case voteCount = "vote_count"
     }
     
-    required public init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         adult = try container.decodeIfPresent(Bool.self, forKey: .adult) ?? false
         backdropPath = try container.decodeIfPresent(String.self, forKey: .backdropPath) ?? ""

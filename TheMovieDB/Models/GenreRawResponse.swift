@@ -15,7 +15,7 @@ class GenreRawResponse: Decodable {
         case genres
     }
     
-    required public init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         genres = try container.decodeIfPresent([Genre].self, forKey: .genres) ?? []
     }
@@ -34,7 +34,7 @@ class Genre: Decodable {
         self.name = name
     }
     
-    required public init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decodeIfPresent(Int.self, forKey: .id) ?? 0
         name = try container.decodeIfPresent(String.self, forKey: .name) ?? ""

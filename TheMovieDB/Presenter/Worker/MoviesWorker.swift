@@ -12,7 +12,7 @@ class MoviesWorker: NSObject {
     ///
     /// Get genre
     ///
-    public static func getGenre(onSuccess: @escaping(_ result: GenreRawResponse)-> Void, onFailure: @escaping (_ error: ErrorRawResponse)->Void) {
+    static func getGenre(onSuccess: @escaping(_ result: GenreRawResponse)-> Void, onFailure: @escaping (_ error: ErrorRawResponse)->Void) {
         let apiKey = NetService.API_KEY
         let language = "en-US"
         
@@ -28,7 +28,7 @@ class MoviesWorker: NSObject {
     /// - Parameter page
     /// - Parameter genreID
     ///
-    public static func getDiscover(page: Int, genreID: Int?, onSuccess: @escaping(_ result: DiscoverRawResponse)-> Void, onFailure: @escaping (_ error: ErrorRawResponse)->Void) {
+    static func getDiscover(page: Int, genreID: Int?, onSuccess: @escaping(_ result: DiscoverRawResponse)-> Void, onFailure: @escaping (_ error: ErrorRawResponse)->Void) {
         
         let discoverParam = DiscoverParam()
         discoverParam.apiKey = NetService.API_KEY
@@ -46,7 +46,7 @@ class MoviesWorker: NSObject {
     ///
     /// Get detial movie
     ///
-    public static func getDetailMovie(movieID: Int, onSuccess: @escaping(_ result: DetailMovieRawResponse)-> Void, onFailure: @escaping (_ error: ErrorRawResponse)->Void) {
+    static func getDetailMovie(movieID: Int, onSuccess: @escaping(_ result: DetailMovieRawResponse)-> Void, onFailure: @escaping (_ error: ErrorRawResponse)->Void) {
         let apiKey = NetService.API_KEY
         let language = "en-US"
         
