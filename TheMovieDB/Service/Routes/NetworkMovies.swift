@@ -35,8 +35,6 @@ enum NetworkMovies: URLRequestConvertible {
         case .getDiscover(let param):
             return (Endpoint.DISCOVER, param.asParam())
         case .getDetailMovie(let id, apiKey: let apiKey, language: let language):
-            print("INI ID \(id)")
-            
             return ("\(Endpoint.DETAIL_MOVIE)\(id)", ["api_key": apiKey, "language": language])
         }
     }
